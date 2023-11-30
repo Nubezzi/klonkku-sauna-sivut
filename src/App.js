@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import DiscordButton from './DcButton'
 
 function App() {
   const copyToClipboard = () => {
@@ -22,15 +23,18 @@ function App() {
               Kopio liittymistiedot leikepöydälle
             </button>
           </div>
-          <iframe 
-            src="https://discord.com/widget?id=1179855166128795768&theme=dark" 
-            width="350" 
-            height="500" 
-            allowTransparency="true" 
-            frameBorder="0" 
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-            title="Discord Widget">
-          </iframe>
+          <div className='content-inner-div'>
+            <iframe 
+              src="https://discord.com/widget?id=1179855166128795768&theme=dark" 
+              width="350" 
+              height="500" 
+              allowTransparency="true" 
+              frameBorder="0" 
+              sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+              title="Discord Widget">
+            </iframe>
+          </div>
+              <DiscordButton url={"https://discord.gg/U4httbBywe"}/>
         </div>
       </body>
     </div>
